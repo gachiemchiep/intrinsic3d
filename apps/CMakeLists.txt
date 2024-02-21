@@ -46,7 +46,7 @@ ADD_EXECUTABLE(${APP_KEYFRAMES}
     src/app_keyframes.cpp
 )
 TARGET_LINK_LIBRARIES(${APP_KEYFRAMES} ${Intrinsic3D_LIBRARIES})
-TARGET_COMPILE_OPTIONS(${APP_KEYFRAMES} PRIVATE -std=c++11)
+TARGET_COMPILE_OPTIONS(${APP_KEYFRAMES} PRIVATE -std=c++17)
 
 # ------------------------------------------------------------------------
 # Fusion app
@@ -56,7 +56,7 @@ ADD_EXECUTABLE(${APP_FUSION}
     src/app_fusion.cpp
 )
 TARGET_LINK_LIBRARIES(${APP_FUSION} ${Intrinsic3D_LIBRARIES})
-TARGET_COMPILE_OPTIONS(${APP_FUSION} PRIVATE -std=c++11)
+TARGET_COMPILE_OPTIONS(${APP_FUSION} PRIVATE -std=c++17)
 
 # ------------------------------------------------------------------------
 # Intrinsic3D app
@@ -66,4 +66,4 @@ ADD_EXECUTABLE(${APP_INTRINSIC3D}
     src/app_intrinsic3d.cpp
 )
 TARGET_LINK_LIBRARIES(${APP_INTRINSIC3D} ${Intrinsic3D_LIBRARIES})
-TARGET_COMPILE_OPTIONS(${APP_INTRINSIC3D} PRIVATE -std=c++11)
+TARGET_COMPILE_OPTIONS(${APP_INTRINSIC3D} PRIVATE -std=c++17)
